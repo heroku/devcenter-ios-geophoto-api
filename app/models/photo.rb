@@ -1,5 +1,5 @@
 class Photo < ActiveRecord::Base
-  COORDINATE_DELTA = 1
+  COORDINATE_DELTA = 0.05
 
   has_attached_file :image,
                     :styles => { :thumbnail => "100x100#" },
